@@ -1,0 +1,106 @@
+.login{
+   display: grid;
+   place-items: center;
+   background-color: #264653;
+   height: 100vh;
+}
+
+.login_content{ 
+    text-align: center;
+}
+
+.login_logo > img{
+    margin-top: 30px;
+    height: 90px;
+    width: 210px;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+
+.login_desc{
+       line-height: 30px;
+}
+
+.login_form{
+    margin-top: 40px;
+}
+
+.login_form > form{
+      display: flex;
+      flex-direction: column;
+}
+
+.login_form > form > input{
+       width: 390px;
+       padding-top: 11px;
+       padding-bottom: 11px;
+       margin-top: 35px;
+       border-top: none;
+       border-bottom: none;
+       border-right: none;
+       border-left: none;
+       border-radius: 3px;
+       border: 1px solid rgb(145, 142, 142);
+       outline-color: rgb(99, 91, 91);
+}
+
+
+
+.login_btn{
+    margin-top: 35px;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffff;
+    border: 1px solid rgb(34, 32, 32);
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgb(54, 48, 48);
+}
+
+.login_btn:hover{
+    background-color: rgb(71, 66, 66);
+}
+
+.login_google{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+}
+
+.login_icon{
+     width: 30px;
+     max-height: 30px;
+     object-fit: contain;
+}
+
+.login_google > span{
+    margin-left: 80px;
+    font-size: 18px;
+}
+
+.login_register{
+    display: flex;
+    margin-top: 10px;
+    color: #ffff;
+}
+
+.login_register > a{
+    margin-left: 10px;
+    color: green;
+    text-decoration: none;
+}
+
+.login_register > a:hover{
+     text-decoration: underline;
+}
+
+.login_forgot{
+     float: right;
+     text-decoration: none;
+     color: green;
+}

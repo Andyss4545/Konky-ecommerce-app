@@ -1,0 +1,49 @@
+.subtotal{
+    margin-left:  10px;
+}
+
+.subtotal_row2{
+   font-size: 15px;
+   border-bottom: 1px solid wheat;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 5px;
+   align-items: center;
+   padding-bottom: 5px;
+}
+
+.subtotal_colon{
+     font-size: 12px;
+     font-weight: 500;
+}
+
+.subtotal_price{
+      font-weight: 700;
+      font-size: 17px;
+}
+.subtotal_title{
+   margin-top: 10px;
+   font-size: 15px;
+   font-weight: 400;
+   border-bottom: 1px solid wheat;
+   padding-bottom: 10px;
+}
+
+.subtotal_btn{
+    margin-top: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    border: 1px solid rgb(34, 32, 32);
+    border-radius: 5px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(54, 48, 48);
+}
+
+.subtotal_btn:hover{
+    background-color: rgb(71, 66, 66);
+}

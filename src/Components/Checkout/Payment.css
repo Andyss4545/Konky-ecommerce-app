@@ -1,0 +1,140 @@
+
+
+.payment_num{
+    text-align: center;
+    background-color: #eaedea;
+    height: 10vh;
+}
+
+.payment_num > p {
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.payment_delivery{
+    margin-top: 15px;
+    display: flex;
+    border-bottom: 1px solid rgb(245, 240, 240);
+    padding-bottom: 15px;
+    margin-left: 20px;
+}
+
+.payment_delivery >.payment_details{
+       margin-left: 40px;
+}
+
+.payment_checkout{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+ }
+
+ .payment_checkoutName {
+    border-top: 1px solid rgb(245, 240, 240);
+    font-size: 25px;
+    font-weight: 400;
+ }
+ 
+ .payment_items{
+     margin-left: 1rem;
+      display: flex;
+      flex-direction: column; 
+     /* justify-content: space-between; */
+     border: 1px solid rgb(245, 240, 240);
+     padding-bottom: 10px;
+
+ }
+ 
+ .payment_productLeft > img{
+       width: 100px;
+       height: 100px;
+       object-fit: contain;
+ }
+ 
+ .payment_productLeft {
+      display: flex;
+      flex-direction: column;
+ }
+ 
+ .payment_product{
+     display: flex;
+ }
+ 
+ .payment_productRigt{
+     margin-top: 15px;
+     margin-left: 10px;
+ }
+ 
+ .payment_title{
+     font-size: 18px;
+ }
+ 
+ .payment_title > a {
+      color: black;
+      text-decoration: none;
+ }
+ 
+ .payment_title > a:hover{
+     text-decoration: underline;
+ }
+ 
+ .payment_category{
+     margin-top: 10px;
+     font-weight: bold;
+ }
+ 
+ .payment_category > span{
+       font-weight: lighter;
+ }
+ 
+ .payment_price  {
+     font-size: 20px;
+     font-weight: 700;
+     margin-top: 10px;
+ }
+ 
+ .product_rating{
+      margin-top: 35px;
+ }
+ 
+ .product_btn{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid rgb(71, 66, 66);
+     padding: 3px 3px;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-left: 10px;
+ }
+ 
+ .product_btn:hover{
+     background: rgb(71, 66, 66);
+     color: #ffff;
+ }
+
+ 
+ .payment_icon{
+      background-color:  rgb(71, 66, 66);
+      color: white !important;
+      cursor: pointer;
+ }
+ 
+ .payment_icon:hover{
+     background-color: rgb(179, 147, 147);
+ }
+
+ .payment_left > hr {
+     border-color: rgb(179, 147, 147);
+     width: 95%;
+     margin: 0 auto;
+ }
+
+ .payment_method{
+       margin: 10px 0 10px 15px;
+ }
+
+ 
+ 

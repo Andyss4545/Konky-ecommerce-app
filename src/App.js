@@ -1,24 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Components/Home/Home';
+import {BrowserRouter, Route, Routes} from "react-router-dom"
+import ViewProduct from './Components/ViewProduct/ViewProduct';
+import Header from './Components/Header/Header';
+import Checkout from './Components/Checkout/Checkout';
+import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
+import Payment from './Components/Checkout/Payment'
+import ForgotPassword from './Components/Login/ForgotPassword';
+import { useStateValue } from './StateProvider/StateProvider';
+import { auth } from './firebase';
+import { useEffect } from 'react';
 
 function App() {
+  const [{}, dispatch] = useStateValue()
+
+  useEffect(() => {
+      auth.onAuthStateChanged((authUser) => {
+           console.log('this is the current user', authUser)
+
+           if(authUser) {
+               dispatch({
+                   type: "USER",
+                   user: authUser
+               })
+           } else{
+               dispatch({
+                   type: "USER",
+                   user: null
+               })
+           }
+      })
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+       <Routes>
+            <Route path='/' exact element={[<Header/>, <Home/>]}/>
+            <Route path='/product/:ProductId' element={[<Header/>, <ViewProduct/>]} />
+            <Route path='/cart/checkout' element={[<Header/>, <Checkout/>]}/>
+            <Route path='/login' element={<Login/>}/>
+            <Route path='/register' element={<Register/>}/>
+            <Route path='/forgotpassword' element={<ForgotPassword/>}/>
+            <Route path='/payment' element={[<Header/>, <Payment/>]}/>
+
+       </Routes>
+    </BrowserRouter>
+    
   );
 }
 
