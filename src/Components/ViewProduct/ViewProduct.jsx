@@ -41,7 +41,7 @@ const ViewProduct = () => {
   return (
     <div key={item.id} className="singleProduct">
       <div className="singleProduct_images">
-        <span className="product_promo">-20%</span>
+        <span className="product_promo2">-20%</span>
         <img
           className="singleProduct_imageLarge"
           src={item?.image}

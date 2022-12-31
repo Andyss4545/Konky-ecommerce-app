@@ -87,16 +87,16 @@
 }
 
 .product_promo{
-     position: absolute;
+     position: relative;
      background-color: rgb(238, 162, 20);
      padding: 6px 12px 6px 6px;
-     border-radius: 50%;
-     height: 30px;
+     border-radius: 250px;
+     height: 40px;
      width: 30px;
      color: #ffff;
-     z-index: 100;
-     right: 140px;
-     bottom: 310px;
+     z-index: 100; 
+     right: 0px; 
+     bottom: 0px; 
 }
 
 

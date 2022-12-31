@@ -11,6 +11,7 @@ import ForgotPassword from './Components/Login/ForgotPassword';
 import { useStateValue } from './StateProvider/StateProvider';
 import { auth } from './firebase';
 import { useEffect } from 'react';
+import AllProducts from "./Components/Pages/AllProducts/AllProducts"
 
 function App() {
   const [{}, dispatch] = useStateValue()
@@ -43,6 +44,7 @@ function App() {
             <Route path='/register' element={<Register/>}/>
             <Route path='/forgotpassword' element={<ForgotPassword/>}/>
             <Route path='/payment' element={[<Header/>, <Payment/>]}/>
+            <Route path='/allproducs' element={[<Header/>, <AllProducts/>]} />
 
        </Routes>
     </BrowserRouter>

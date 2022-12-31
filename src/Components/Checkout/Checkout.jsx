@@ -7,11 +7,28 @@ import AddIcon from "@mui/icons-material/Add";
 import SubTotal from "./SubTotal";
 import { useStateValue } from "../../StateProvider/StateProvider";
 import { Link, useNavigate } from "react-router-dom";
+import swal from "sweetalert";
 
 const Checkout = () => {
   const navigate = useNavigate();
   const [{ basket }, dispatch] = useStateValue();
   console.log(basket);
+
+  // let removeFromBasket = async (item) => {
+  //   // dispatch items to basket
+  //   dispatch({
+  //     type: "ADD_TO_BASKET",
+  //     basket: `${item}`,
+  //   });
+
+  //   // alert from  sweetalert library
+  //   swal({
+  //     title: "Good job!",
+  //     text: "Product added to cart!",
+  //     icon: "success",
+  //     button: "Okay",
+  //   });
+  // };
   return (
     <React.Fragment>
       {/* if basket length is equal to 0 then show cart is empty, if It is greater than 0 show all the products in cart */}

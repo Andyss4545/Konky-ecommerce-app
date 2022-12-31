@@ -111,16 +111,16 @@ const Header = () => {
               <Link to={"/"}>Home</Link>
             </li>
             <li>
-              <Link to={"/"}>Shoes</Link>
+              <Link to={"/"}>Services</Link>
             </li>
             <li>
-              <Link to={"/"}>Clothes</Link>
+              <Link to={"/"}>Products</Link>
             </li>
             <li>
-              <Link to={"/"}>Watches</Link>
+              <Link to={"/"}>About</Link>
             </li>
             <li>
-              <Link to={"/"}>Accessories</Link>
+              <Link to={"/"}>Contact</Link>
             </li>
             <li>
               <Link to={"/"}>Appliances</Link>

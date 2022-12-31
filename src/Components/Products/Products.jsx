@@ -10,6 +10,7 @@ import ProductServie from "../../Services/axiosService";
 import { useStateValue } from "../../StateProvider/StateProvider";
 import Search from "@mui/icons-material/Search";
 import { Button } from "@mui/material";
+import swal from "sweetalert";
 
 const Products = () => {
   // products to empty array of object
@@ -64,6 +65,23 @@ const Products = () => {
   }, []);
 
   // tell the browser to dispatch items
+
+  // add to cart button
+  // let addToBasket = async (item) => {
+  //   // dispatch items to basket
+  //   dispatch({
+  //     type: "ADD_TO_BASKET",
+  //     basket: `${item}`,
+  //   });
+
+  //   // sweetalert library
+  //   swal({
+  //     title: "Good job!",
+  //     text: "Product added to cart!",
+  //     icon: "success",
+  //     button: "Okay",
+  //   });
+  // };
 
   return (
     <React.Fragment>
@@ -126,7 +144,10 @@ const Products = () => {
                     <span
                       /** Dispatch product in to the basket when  Add to cart button is clicked */
                       onClick={() =>
-                        dispatch({ type: "ADD_TO_BASKET", basket: item })
+                        dispatch({
+                          type: "ADD_TO_BASKET",
+                          basket: item,
+                        })
                       }
                     >
                       Add To Cart
