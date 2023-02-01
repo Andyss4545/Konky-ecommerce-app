@@ -12,6 +12,10 @@ Desktop Version
 
 Mobile Version
 
-![Konky-ecommerce-mobile](https://user-images.githubusercontent.com/34424896/216039730-e0b94177-eecb-452a-8603-e0d74d4a30d8.png)
+![Konky-ecommerce-mobile](https://user-images.githubusercontent.com/34424896/216040087-38b8e598-943f-443c-980b-cf07adc493e0.png)
 
 
+
+###  Application URL
+
+https://wakanda-shop.firebaseapp.com/
