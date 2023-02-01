@@ -12,6 +12,7 @@ This application was created using ReactJS, Javascript, React Context Api, React
 * If cart is empty show go to product page to add product to cart
 * Login and Sign authentication with firebase
 * Checkout products
+* Search products
 * react currency converter
 
 ## Application Screenshot below
