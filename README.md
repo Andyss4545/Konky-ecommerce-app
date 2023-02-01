@@ -11,6 +11,7 @@ This application was created using ReactJS, Javascript, React Context Api, React
 * Decrease Product Quantity
 * If cart is empty show go to product page to add product to cart
 * Login and Sign authentication with firebase
+* Show totol products in the cart
 * Checkout products
 * Search products
 * react currency converter
