@@ -2,6 +2,18 @@
 
 This application was created using ReactJS, Javascript, React Context Api, React Router Dom, React Currency Converter etc.
 
+
+#### Main Application Features
+
+* Add to cart with dispatch method
+* Remove from cart with dispatch method
+* Increase Product quantity
+* Decrease Product Quantity
+* If cart is empty show go to product page to add product to cart
+* Login and Sign authentication with firebase
+* Checkout products
+* react currency converter
+
 ## Application Screenshot below
 
 
@@ -18,4 +30,4 @@ Mobile Version
 
 ###  Application URL
 
-https://wakanda-shop.firebaseapp.com/
+Visit this link to seeit live [Konky E-commerce Application](https://wakanda-shop.firebaseapp.com/)
